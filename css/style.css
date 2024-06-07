@@ -60,6 +60,11 @@ h1 {
 
 .grow .flex-container > * {
     flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.grow .flex-container > *:nth-child(2) {
+    flex-grow: 3;
 }
 
 /* 
@@ -70,4 +75,9 @@ h1 {
 
 .shrink .flex-container > * {
     flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+.shrink .flex-container > *:nth-child(2) {
+    flex-shrink: 3;
 }
